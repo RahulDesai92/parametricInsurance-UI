@@ -621,7 +621,7 @@
             }
             $.ajax({
                 type: "POST",
-                url: "http://192.168.0.26:3006/createContract",
+                url: "http://119.81.59.59:3006/createContract",
                 contentType: 'application/json',
 
                 data: JSON.stringify(datastring),
@@ -652,7 +652,7 @@
         function getdata() {
 
             $.ajax({
-                url: "http://192.168.0.26:3006/getContract",
+                url: "http://119.81.59.59:3006/getContract",
                 method: "GET",
                 contentType: 'application/json',
 
@@ -747,7 +747,7 @@
                 }
             });
             $.ajax({
-                url: "http://192.168.0.26:3006/weatherdata",
+                url: "http://119.81.59.59:3006/weatherdata",
                 method: "GET",
                 contentType: 'application/json',
 
@@ -919,7 +919,7 @@
  return setInterval(function() {
                 $.ajax({
 
-                    url: "http://192.168.0.26:3006/mockweatherapi",
+                    url: "http://119.81.59.59:3006/mockweatherapi",
                     method: "GET",
                     contentType: 'application/json',
 
