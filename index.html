@@ -165,6 +165,7 @@
                                         <option id="cr" value="CHF">CHF</option>
                                         <option id="cr" value="NZD">NZD</option>
                                         <option id="cr" value="EUR">EUR</option>
+                                        <option id="cr" value="EUR">GBP</option>
                                     </select>
                                     <br>
                                     <!-- <button class="btn btn-light btn-xl js-scroll-trigger" style="margin-left:-250px; width: 200px; display:inline; height:40px" onclick="myCurrency()">select</button> -->
@@ -194,11 +195,11 @@
                         <div class="row">
                             <div class="col-sm-9">
                                 <br>
-                                <h1 style="text-align:start;  font-size:18px; height:10px; color:black;" for="E"> EarthQuake In Richter scale </label>
+                                <h1 style="text-align:start;  font-size:18px; height:10px; color:black;" for="E"> Earthquake </label>
                                         <br>
                                         <a style="color: rgb(5, 0, 0)"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                                        <a style="color: rgb(5, 0, 0)"><b>10</b></a>
+                                        <a style="color: rgb(5, 0, 0)"><b>10 Richter</b></a>
                                         <input type="range" class="slider" name="rangeInput" min="0" max="10" style=" width: 550px;" onchange="updateTextInput1(this.value);">
                             </div>
                             <div class="col-sm-3">
@@ -213,11 +214,11 @@
                         <div class="row">
                                     <div class="col-sm-9">
                                         <br>
-                                        <h1 style="text-align:start;  font-size:18px; height:10px; color:black;" for="W">Wind speed In knot</h1>
+                                        <h1 style="text-align:start;  font-size:18px; height:10px; color:black;" for="W">Wind speed</h1>
                                 <br>
                                 <a style="color: rgb(5, 0, 0)"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 
-                                <a style="color: rgb(5, 0, 0)">100</a>
+                                <a style="color: rgb(5, 0, 0)">100 kts</a>
                                 <input type="range" class="slider" name="rangeInput" min="0" max="100" style="margin-left:-150px; width: 550px;" onchange="updateTextInput2(this.value);">
                                 <br>
                             </div>
@@ -234,12 +235,12 @@
                         <div class="row">
                             <div class="col-sm-9">
                                 <br>
-                                <h1 style="text-align:start;  font-size:18px; height:10px; color:black;" for="R">Rain In milimeter</h1>
+                                <h1 style="text-align:start;  font-size:18px; height:10px; color:black;" for="R">Rainfall</h1>
                                 <br>
                                 <br>
                                 <a style="color: rgb(5, 0, 0)"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                                <a style="color: rgb(5, 0, 0)">1000</a>
+                                <a style="color: rgb(5, 0, 0)">1000 millimeter</a>
                                 <input type="range" class="slider" name="rangeInput" min="0" max="1000" style="margin-left:-155px; width: 550px;" onchange="updateTextInput3(this.value);">
                                 <br>
                             </div>
@@ -265,7 +266,7 @@
                             <div id="feedback-form" style='display:none;' class="col-xs-4 col-md-4 panel panel-default">
                                 <ul>
 
-                                        <p style="color: #fff">Temprature:</p>
+                                        <p style="color: #fff">Temperature:</p>
                                         <a style="color: #fff" id="td11"></a>
                                         
                                         <p style="color: #fff">Temp-Max:</p>
@@ -274,19 +275,19 @@
                                         <p style="color: #fff">Temp-Min:</p>
                                         <a style="color: #fff" id="td13"></a>
                                         
-                                        <p style="color: #fff">QuakeRatio:</p>
+                                        <p style="color: #fff">Quake Magnitude:</p>
                                         <a style="color: #fff" id="td14"></a>
                                         
-                                        <p style="color: #fff">windspeed:</p>
+                                        <p style="color: #fff">Wind Speed:</p>
                                         <a style="color: #fff" id="td15"></a>
                                         
-                                        <p style="color: #fff">Rain:</p>
+                                        <p style="color: #fff">Rainfall:</p>
                                         <a style="color: #fff" id="td16"></a>
                                         
                                 </ul>   
                                <!-- <b style="color: #fff"> © Oracle</b> -->
                             </div>
-                            <div id="feedback-tab" >WeatherData</div>
+                            <div id="feedback-tab" >Weather Data</div>
                         </div>
                     <!--<div id="footer-box"><!--<p class="footer-text">Not a member?<span class="sign-up"{{action 'signup'}}> Sign up now</span></p></div>-->
                     <a class="btn btn-light btn-xl sr-button" href="#services">Get Deatils</a>
